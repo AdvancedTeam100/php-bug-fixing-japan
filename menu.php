@@ -11,7 +11,7 @@
         </ul>
         <h2><i class="fas fa-star"></i>ランキング</h2>
         <ul>
-            <li><a href="">来店回数</a></li>
+            <li><a href="visit_rank.php">来店回数</a></li>
             <li><a href="">年代・性別</a></li>
             <li><a href="">住まい</a></li>
             <li><a href="">職業</a></li>
