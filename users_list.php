@@ -65,11 +65,17 @@ try{
             <th>市</th>
             <th>生年月日</th>
             <th>職業</th>
+            <th>ステータス</th>
+            <th>来店回数</th>
             <th>登録日</th>
             <th></th>
             <th></th>
         </tr>
-        <?php foreach(array_reverse($users_data,true) as $user) :?>
+        <?php foreach(array_reverse($users_data,true) as $user) :
+            $stmt = $db->prepare("SELECT * FROM visits WHERE user_id=?");
+            $stmt->execute([$user['user_id']]);
+            $vists_cnt = count($stmt->fetchAll());
+            ?>
         <tr>
             <td><?=$user['user_id'];?></td>
             <td><?=$user['name'];?></td>
@@ -77,6 +83,8 @@ try{
             <td><?=$user['city'];?></td>
             <td><?=$user['birthday'];?></td>
             <td><?=$user['job'];?></td>
+            <td><?=$user['status'];?></td>
+            <td><?=$vists_cnt;?></td>
             <td><?=$user['created_at'];?></td>
             <td>
                 <div class="modal fade" id="detail" tabindex="-1" role="dialog" aria-hidden="true">
