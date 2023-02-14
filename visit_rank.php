@@ -28,8 +28,13 @@ try{
     <?php require('menu.php');?>
 <main>
     <h1>来店回数</h1>
-
+    
     <table class="t">
+        <tr>
+            <th>順位</th>
+            <th>名前</th>
+            <th>回数</th>
+        </tr>
         <?php foreach ($visit_data as $visit){
             $user_id = $visit['user_id'];
             $visit_count = $visit['visit_count'];
@@ -38,14 +43,6 @@ try{
             $user_stmt->bindValue(':user_id', $user_id, PDO::PARAM_INT);
             $user_stmt->execute();
             $user_data = $user_stmt->fetch();
-            
-            echo "
-            <tr>
-                <th>順位</th>
-                <th>名前</th>
-                <th>回数</th>
-            </tr>"
-            ;
 
             echo "<tr>";
             echo "<td>" . $rank . "位</td>";
