@@ -46,7 +46,7 @@ try{
             
         ?>
         <tr>
-            <td><?=$key;?></td>
+            <td><?=$key+1;?></td>
             <td><?=$visit['user_id'];?></td>
             <td><?=$user_data['name'];?></td>
             <td><?=$visit['memo'];?></td>
