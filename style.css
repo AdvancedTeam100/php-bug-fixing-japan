@@ -104,3 +104,59 @@ header {
     background-color: white;
     padding: 5px 20px;
   }
+  .main_col{
+    display: flex;
+  }
+  .col_1{
+    width: 50%;
+  }
+  .col_2{
+    width: 30%;
+  }
+  .inner_col_1{
+    background-color: white;
+    padding: 30px;
+    margin: 0 30px;
+    box-shadow: 4px 4px 3px #c3c3c3;
+  }
+  .inner_col_1 table{
+    margin: 20px 0;
+  }
+  .inner_col_1 td{
+    padding: 0 20px;
+  }
+  .inner_col_2{
+    background-color: white;
+    padding: 50px;
+    margin: 0 30px;
+    box-shadow: 4px 4px 3px #c3c3c3;
+  }
+  .inner_col_2 button{
+    background-color: white;
+    border: none;
+    padding: 3px 0;
+  }
+  .status{
+    background-color: rgb(126, 124, 0);
+    color: white;
+    padding: 5px;
+  }
+  .tag td{
+    background-color: rgb(247 140 0);
+    padding: 3px 20px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 4px 4px 3px #c3c3c3;
+    display: inline-block;
+    margin: 3px;
+  }
+  .tag input{
+    width: 100px;
+    border: none;
+  }
+  td.td_reset{
+    background-color:none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none
+  }
