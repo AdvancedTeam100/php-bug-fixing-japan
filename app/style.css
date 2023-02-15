@@ -1,0 +1,131 @@
+/* 全体の設定 */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    background-color: #fff8ef;
+    color: #686868;
+  }
+  
+  /* ヘッダー */
+  header {
+    background-color: #0b3600;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+  }
+  header h1{
+    margin: 0px;
+    font-size: 22px;
+  }
+  a{
+    text-decoration: none;
+  }
+  .top_img img{
+    width: 100%;
+  }
+  .user_info{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    align-items: center;
+    background-color: #d9d9d9;
+  }
+  .user_rank_info{
+    text-align: center;
+  }
+  .rank_card img{
+    width: 140px;
+  }
+
+  .user_name {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .user_rank {
+    font-size: 16px;
+    background-color: #8a9300;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px #494a00;
+  }
+  main {
+    padding: 16px;
+  }
+  .contents{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .contents td{
+    display: inline-block;
+    background-color: #fff;
+    border: solid 1px #d1d1d1;
+    border-radius: 8px;
+    margin: 5px;
+    width: 45%;
+    box-shadow: 4px 4px 3px #c3c3c3;
+  }
+  .contents h2{
+    text-align: center;
+    font-size: 15px;
+  }
+  .contents p{
+    font-size: 10px;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    margin-top: 32px;
+  }
+  
+  /* スライドショー */
+  .slideshow-container {
+    position: relative;
+    height: 270px;
+}
+
+.mySlides {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+.dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+.fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
