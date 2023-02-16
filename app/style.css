@@ -160,3 +160,75 @@ body {
   .stamp img{
     width: 45px;
   }
+
+  /* ポイント管理 */
+  .point{
+    background-color: white;
+    padding: 10px;
+    box-shadow: 4px 4px 3px #c3c3c3;
+  }
+  .point p{
+    margin: 0;
+    text-align: left;
+  }
+  .myPoint:before {
+    content: '';
+    display: inline-block;
+    width: 57px;
+    height: 65px;
+    background-image: url(./img/point.png);
+    background-size: cover;
+    vertical-align: middle;
+    margin: 0px 20px;
+  }
+  p.myPoint{
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+  .Mycoupon_card{
+    background-color: #e96100;
+    color: white;
+    padding: 10px 25px;
+    box-shadow: 4px 4px 3px #c3c3c3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+  }
+  .Mycoupon_card button{
+    background-color: #ffe000;
+    border-radius: 10px;
+    color: #000000;
+    padding: 8px 20px;
+    border: solid 1px #ff9c9c;
+  }
+  .Mycoupon_card button:hover{
+    background-color: #9c8700;
+    color: #ffffff;
+  }
+  .coupon_card{
+    background-color: #ffffff;
+    color: rgb(68, 68, 68);
+    padding: 10px 25px;
+    box-shadow: 4px 4px 3px #c3c3c3;
+    text-align: center;
+  }
+  .coupon_card p{
+    font-size: larger;
+    background-color: #e96100;
+    color: white;
+    padding: 5px;
+  }
+  .coupon_card button{
+    background-color: #ffe000;
+    border-radius: 10px;
+    color: #000000;
+    padding: 8px 20px;
+    border: solid 1px #ff9c9c;
+  }
+  .coupon_card button:hover{
+    background-color: #9c8700;
+    color: #ffffff;
+  }
