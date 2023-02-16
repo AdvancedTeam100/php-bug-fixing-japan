@@ -7,6 +7,9 @@ body {
     background-color: #fff8ef;
     color: #686868;
   }
+  h1{
+    text-align: center;
+  }
   
   /* ヘッダー */
   header {
@@ -129,3 +132,25 @@ body {
     transition: opacity 1s ease-in-out;
   }
   
+  /* スタンプカード */
+  .stamp{
+    background-color: #0077c7;
+    text-align: center;
+  }
+  .stamp table{
+    background-color: #fff4ca;
+    padding: 5px 2px;
+  }
+  .stamp td{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid 1px #d1d1d1;
+    display: inline-block;
+    margin: 5px;
+    background-color: white;
+    color: #cbcbcb;
+  }
+  .stamp img{
+    width: 45px;
+  }
