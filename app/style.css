@@ -10,7 +10,9 @@ body {
   h1{
     text-align: center;
   }
-  
+  p{
+    text-align: center;
+  }
   /* ヘッダー */
   header {
     background-color: #0b3600;
@@ -131,7 +133,11 @@ body {
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }
-  
+  /* QR */
+  #img-qr{
+    text-align: center;
+    padding: 10px;
+  }
   /* スタンプカード */
   .stamp{
     background-color: #0077c7;
