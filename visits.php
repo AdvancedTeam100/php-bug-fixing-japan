@@ -77,7 +77,7 @@ try{
                                 <br>
                             </div>
                             <div class="modal-footer">
-                                <input type="hidden" name="user_id" id="user_id">
+                                <input type="hidden" name="visit_id" id="visit_id">
                                 <button type="submit" class="btn btn-primary">変更</button>
                                 </form>
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
@@ -87,7 +87,7 @@ try{
                     </div>
                 </div>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#detail" 
-                    onClick="handleClick(`<?= $visit['user_id'];?>`,`<?= $user_data['name'];?>`,`<?= $visit['memo'];?>`);">
+                    onClick="handleClick(`<?= $visit['visit_id'];?>`,`<?= $user_data['name'];?>`,`<?= $visit['memo'];?>`);">
                     編集</button>
                 </td>
 
@@ -96,8 +96,8 @@ try{
     </table>
 </main>
 <script>
-    function handleClick(user_id,name,memo){
-        document.getElementById("user_id").value = user_id;
+    function handleClick(visit_id,name,memo){
+        document.getElementById("visit_id").value = visit_id;
         document.getElementById("name").innerText = name;
         document.getElementById("memo").value = memo;
     }

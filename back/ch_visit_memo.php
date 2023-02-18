@@ -1,16 +1,16 @@
 <?php
-    if(isset($_POST['user_id'])&&isset($_POST['memo'])){
+    if(isset($_POST['visit_id'])&&isset($_POST['memo'])){
         include('../common.php');
     
-        $user_id = $_POST['user_id'];
+        $visit_id = $_POST['visit_id'];
         $memo = $_POST['memo'];
     
         try{
             $db= new PDO($dsn,$user,$pass,[
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             ]);
-            $stmt = $db->prepare('UPDATE visits SET memo=:memo WHERE user_id = :user_id');
-            $stmt->execute(array(':user_id' => $user_id,':memo' => $memo));
+            $stmt = $db->prepare('UPDATE visits SET memo=:memo WHERE visit_id = :visit_id');
+            $stmt->execute(array(':visit_id' => $visit_id,':memo' => $memo));
         
             $db = null;
         }catch(PDOException $e){
