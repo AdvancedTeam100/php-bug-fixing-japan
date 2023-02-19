@@ -11,7 +11,7 @@ try{
 
     $sql = "SELECT job, COUNT(*) as count
         FROM users
-        GROUP BY prefecture, job
+        GROUP BY job
         ORDER BY count DESC";
     $stmt = $db->prepare($sql);
     $stmt->execute();
