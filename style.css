@@ -160,3 +160,22 @@ header {
     margin: 0;
     box-shadow: none
   }
+  .tag-delete {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    padding: 2px 5px;
+    background-color: #ff3b3b;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.tag-name {
+    position: relative;
+    cursor: pointer;
+}
+.tag-name:hover .tag-delete {
+    display: block;
+}

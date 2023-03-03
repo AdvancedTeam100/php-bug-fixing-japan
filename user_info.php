@@ -50,68 +50,47 @@ try{
                     <td><h2><?php echo $user_data['name']?>　様</h2></td>
                     <td><span class="status"><?php echo $user_data['status']?></span></td>
                 </table>
-                <style>
-    .tag-delete {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 12px;
-        padding: 2px 5px;
-        background-color: #ff3b3b;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        cursor: pointer;
-    }
-    .tag-name {
-        position: relative;
-        cursor: pointer;
-    }
-    .tag-name:hover .tag-delete {
-        display: block;
-    }
-</style>
 
-<table class="tag">
-    <?php
-        $tags = explode(',', $user_data['tag']);
-        foreach($tags as $tag){
-            echo '<td class="tag-name">'.$tag.'<span class="tag-delete">-</span></td>';
-        }
-    ?>
-    <form action="back/insert_tags.php" method="post">
-        <td>
-            <input type="text" placeholder="タグを入力" name="new_tag" class="tag" required>
-            <input type="hidden" name="user_id" value="<?=$user_data['user_id']?>">
-        </td>
-        <td class="td_reset"><button class="btn btn-secondary">追加</button></td>
-    </form>
-</table>
+                <table class="tag">
+                    <?php
+                        $tags = explode(',', $user_data['tag']);
+                        foreach($tags as $tag){
+                            echo '<td class="tag-name">'.$tag.'<span class="tag-delete">-</span></td>';
+                        }
+                    ?>
+                    <form action="back/insert_tags.php" method="post">
+                        <td>
+                            <input type="text" placeholder="タグを入力" name="new_tag" class="tag" required>
+                            <input type="hidden" name="user_id" value="<?=$user_data['user_id']?>">
+                        </td>
+                        <td class="td_reset"><button class="btn btn-secondary">追加</button></td>
+                    </form>
+                </table>
 
-<script>
-    const tagDeletes = document.querySelectorAll('.tag-delete');
-    tagDeletes.forEach(tagDelete => {
-        tagDelete.addEventListener('click', (event) => {
-            event.stopPropagation();
-            const tagName = tagDelete.parentElement.textContent.trim();
-            const deleteForm = document.createElement('form');
-            deleteForm.setAttribute('action', 'back/delete_tags.php');
-            deleteForm.setAttribute('method', 'post');
-            deleteForm.innerHTML = '<input type="hidden" name="user_id" value="<?=$user_data['user_id']?>">' +
-                                   '<input type="hidden" name="tag" value="' + tagName + '">' +
-                                   '<button type="submit" class="tag-delete">-</button>';
-            document.body.appendChild(deleteForm);
-            deleteForm.submit();
-        });
-    });
-    const tagNames = document.querySelectorAll('.tag-name');
-    tagNames.forEach(tagName => {
-        tagName.addEventListener('click', () => {
-            const tagDelete = tagName.querySelector('.tag-delete');
-            tagDelete.style.display = tagDelete.style.display === 'block' ? 'none' : 'block';
-        });
-    });
-</script>
+                <script>
+                    const tagDeletes = document.querySelectorAll('.tag-delete');
+                    tagDeletes.forEach(tagDelete => {
+                        tagDelete.addEventListener('click', (event) => {
+                            event.stopPropagation();
+                            const tagName = tagDelete.parentElement.textContent.trim();
+                            const deleteForm = document.createElement('form');
+                            deleteForm.setAttribute('action', 'back/delete_tags.php');
+                            deleteForm.setAttribute('method', 'post');
+                            deleteForm.innerHTML = '<input type="hidden" name="user_id" value="<?=$user_data['user_id']?>">' +
+                                                '<input type="hidden" name="tag" value="' + tagName + '">' +
+                                                '<button type="submit" class="tag-delete">-</button>';
+                            document.body.appendChild(deleteForm);
+                            deleteForm.submit();
+                        });
+                    });
+                    const tagNames = document.querySelectorAll('.tag-name');
+                    tagNames.forEach(tagName => {
+                        tagName.addEventListener('click', () => {
+                            const tagDelete = tagName.querySelector('.tag-delete');
+                            tagDelete.style.display = tagDelete.style.display === 'block' ? 'none' : 'block';
+                        });
+                    });
+                </script>
 
                 <br>
                 生年月日　：　<?=$user_data['birthday']?>　<?=$ageInYears?>歳<br>
