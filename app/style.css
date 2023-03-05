@@ -1,3 +1,4 @@
+@media only screen and (max-width: 600px) {
 /* 全体の設定 */
 body {
     font-family: Arial, sans-serif;
@@ -280,4 +281,10 @@ body {
   font-weight: bold;
   margin-right: 5px;
   vertical-align: top;
+}
+}
+@media only screen and (min-width: 601px) {
+  body {
+    display: none;
+}
 }
