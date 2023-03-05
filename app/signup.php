@@ -13,7 +13,7 @@
         <h1>新規登録フォーム</h1>
         <p>下記をご記入ください。</p>
     </header>
-    <form action="" method="post">
+    <form action="back/insert_user.php" method="post">
 
     <label for="name">名前:</label>
     <input type="text" id="name" name="name" required>
@@ -82,11 +82,11 @@
 
     <label>性別:</label>
     <div class="radio-group">
-      <input type="radio" id="male" name="gender" value="male">
+      <input type="radio" id="male" name="gender" value="男性">
       <label for="male">男性</label>
-      <input type="radio" id="female" name="gender" value="female">
+      <input type="radio" id="female" name="gender" value="女性">
       <label for="female">女性</label>
-      <input type="radio" id="other" name="gender" value="other">
+      <input type="radio" id="other" name="gender" value="その他">
       <label for="other">その他</label>
     </div>
 
@@ -119,7 +119,7 @@
             $choices = $row['choices'];
         ?>
             <label for="q<?= $id ?>"><?= $id ?>. <?= $question ?></label>
-            <select id="q<?= $id ?>" name="q<?= $id ?>" required>
+            <select id="q<?= $id ?>" name="question_item_id[<?= $id ?>]" required>
                 <option value="">選択してください</option>
                 <?php
                 $choice_array = explode(',', $choices);
