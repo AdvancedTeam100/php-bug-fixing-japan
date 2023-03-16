@@ -44,8 +44,9 @@
             <?php foreach ($coupons as $coupon): ?>
                 <div class="Mycoupon_card">
                     <p><?=$coupon['name']?></p>
-                    <form action="" method="post">
+                    <form action="back/use_coupon.php" method="post" onsubmit="return confirm('本当にクーポンを使用しますか？');">
                         <input type="hidden" name="coupon_id" value="<?=$coupon['coupon_id']?>">
+                        <input type="hidden" name="user_id" value="<?=$user_id?>">
                         <button>使用する</button>
                     </form>
                 </div>
