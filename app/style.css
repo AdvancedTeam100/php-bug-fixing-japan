@@ -1,11 +1,10 @@
-@media only screen and (max-width: 600px) {
 /* 全体の設定 */
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
-    background-color: #fff8ef;
+    background-color: #ffffff;
     color: #686868;
   }
   h1{
@@ -72,7 +71,7 @@ body {
     border-radius: 8px;
     margin: 5px;
     width: 45%;
-    box-shadow: 4px 4px 3px #c3c3c3;
+    box-shadow: 4px 4px 3px #dddddd;
   }
   .contents h2{
     text-align: center;
@@ -166,7 +165,7 @@ body {
   .point{
     background-color: white;
     padding: 10px;
-    box-shadow: 4px 4px 3px #c3c3c3;
+    box-shadow: 2px 4px 4px 3px #dddddd;
   }
   .point p{
     margin: 0;
@@ -188,22 +187,27 @@ body {
     padding: 10px;
     text-align: center;
   }
-  .Mycoupon_card{
-    background-color: #e96100;
+  .Mycoupon_card_back{
+    background-color: #6db1d9;
     color: white;
+    padding: 1px;
+    box-shadow: 2px 4px 4px 3px #dddddd;
+  }
+  .Mycoupon_card{
+    background-color: #ffffff;
     padding: 10px 25px;
-    box-shadow: 4px 4px 3px #c3c3c3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 8px 0;
+    box-shadow: 2px 4px 4px 3px #dddddd;
+    margin-bottom: 10px;
   }
   .Mycoupon_card button{
-    background-color: #ffe000;
+    background-color: #ffec66;
     border-radius: 10px;
-    color: #000000;
+    color: #4c4c4c;
     padding: 8px 20px;
-    border: solid 1px #ff9c9c;
+    border: solid 1px #ffd2d2;
+    width: 100%;
+    box-shadow: 4px 4px 3px #dddddd;
+    margin: 10px auto;
   }
   .Mycoupon_card button:hover{
     background-color: #9c8700;
@@ -213,8 +217,9 @@ body {
     background-color: #ffffff;
     color: rgb(68, 68, 68);
     padding: 10px 25px;
-    box-shadow: 4px 4px 3px #c3c3c3;
+    box-shadow: 2px 4px 4px 3px #dddddd;
     text-align: center;
+    margin: 10px auto;
   }
   .coupon_card p{
     font-size: larger;
@@ -223,11 +228,14 @@ body {
     padding: 5px;
   }
   .coupon_card button{
-    background-color: #ffe000;
+    background-color: #ffec66;
     border-radius: 10px;
-    color: #000000;
+    color: #4c4c4c;
     padding: 8px 20px;
-    border: solid 1px #ff9c9c;
+    border: solid 1px #ffd2d2;
+    width: 100%;
+    box-shadow: 4px 4px 3px #dddddd;
+    margin: 10px auto;
   }
   .coupon_card button:hover{
     background-color: #9c8700;
@@ -282,9 +290,10 @@ body {
   margin-right: 5px;
   vertical-align: top;
 }
-}
-@media only screen and (min-width: 601px) {
+
+@media only screen and (min-width: 600px) {
   body {
-    display: none;
-}
+    max-width: 555px;
+    margin: 0px auto;
+  }
 }

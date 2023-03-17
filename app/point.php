@@ -42,8 +42,11 @@
         <h2>現在保有中のクーポン</h2>
         <?php if (count($coupons) > 0): ?>
             <?php foreach ($coupons as $coupon): ?>
-                <div class="Mycoupon_card">
+                <div class="Mycoupon_card_back">
                     <p><?=$coupon['name']?></p>
+                </div>
+                    <div class="Mycoupon_card">
+                    <p><?=$coupon['description']?></p>
                     <form action="back/use_coupon.php" method="post" onsubmit="return confirm('本当にクーポンを使用しますか？');">
                         <input type="hidden" name="coupon_id" value="<?=$coupon['coupon_id']?>">
                         <input type="hidden" name="user_id" value="<?=$user_id?>">
