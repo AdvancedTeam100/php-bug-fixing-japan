@@ -31,7 +31,7 @@ if($count>40){
             <?php
             for($i=0; $i<40; $i++){
                 if($i<$stamp_count)
-                    echo '<td><img src="img/feehat.jpg"></td>';
+                    echo '<td><img src="img/stamp.png"></td>';
                 else if($i+1 == 12)
                     echo '<td>シルバー</td>';
                 else if($i+1 == 24)
