@@ -24,6 +24,9 @@ body {
     margin: 0px;
     font-size: 22px;
   }
+  header a{
+    color: white;
+  }
   a{
     text-decoration: none;
   }
