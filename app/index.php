@@ -19,11 +19,11 @@
 
     <div class="user_info">
         <div class="user_rank_info">
-            <p class="user_name">山田 太郎</p>
-            <p class="user_rank">ゴールド会員</p>
+            <p class="user_name"><?=$user_data['name']?> 様</p>
+            <p class="user_rank"><?=$user_data['status']?></p>
         </div>
         <div class="rank_card">
-            <img src="img/feehat.jpg" alt="">
+            <img src="img/bronze.png" alt="">
         </div>
     </div>
       
@@ -35,12 +35,16 @@
                 <p>ここにQRコードを表示</p>
             </td>
             <td>
-                <a href="shop_info.php"><h2>店舗情報</h2></a>
-                <p>お店の情報はこちら！</p>
+                <a href="point.php"><h2>ポイント管理</h2></a>
+                <p>FeeHatポイントを表示</p>
             </td>
             <td>
                 <a href="stamp_card.php"><h2>スタンプカード</h2></a>
                 <p>来店スタンプを集めてクーポンゲット♪</p>
+            </td>
+            <td>
+                <a href="coupon_history.php"><h2>クーポン履歴</h2></a>
+                <p>クーポンの使用履歴を確認できます。</p>
             </td>
             <td>
                 <a href="game.php"><h2>ゲーム</h2></a>
@@ -51,8 +55,12 @@
                 <p>カクテルメニューをランダムで選べる</p>
             </td>
             <td>
-                <a href="mypage.php"><h2>マイページ</h2></a>
+                <a href="mypage.php"><h2>アカウント情報</h2></a>
                 <p>設定情報を確認できます。</p>
+            </td>
+            <td>
+                <a href="shop_info.php"><h2>店舗情報</h2></a>
+                <p>お店の情報はこちら！</p>
             </td>
         </table>
       
