@@ -293,7 +293,7 @@ body {
 
 @media only screen and (min-width: 600px) {
   body {
-    max-width: 555px;
+    max-width: 390px;
     margin: 0px auto;
   }
 }
