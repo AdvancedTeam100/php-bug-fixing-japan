@@ -9,6 +9,8 @@ body {
   }
   h1{
     text-align: center;
+    background-color: #8d8d8d;
+    color: white;
   }
   p{
     text-align: center;
@@ -23,6 +25,8 @@ body {
   header h1{
     margin: 0px;
     font-size: 22px;
+    background-color: #0b3600;
+    color: #fff;
   }
   header a{
     color: white;
