@@ -13,10 +13,10 @@
         <h2><i class="fas fa-star"></i>ランキング</h2>
         <ul>
             <li><a href="visit_rank.php">来店回数</a></li>
-            <li><a href="">年代・性別</a></li>
+            <li><a href="age_sex_rank.php">年代・性別</a></li>
             <li><a href="live_in_rank.php">住まい</a></li>
-            <li><a href="">職業</a></li>
-            <li><a href="">ゲーム</a></li>
+            <li><a href="job.rank.php">職業</a></li>
+            <li><a href="game.rank.php">ゲーム</a></li>
         </ul>
         <h2><i class="fas fa-star"></i>アンケート</h2>
         <ul>
@@ -24,6 +24,12 @@
             <li><a href="questionnaire_tally.php">アンケート集計</a></li>
         </ul>
         <h2><i class="fa fa-cog"></i>クーポン管理</h2>
+        <ul>
+            <li><a href="coupon_list.php">クーポン一覧</a></li>
+        </ul>
         <h2><i class="fa fa-cog"></i>配信設定</h2>
+        <ul>
+            <li><a href="distribution_tags.php">タグ抽出</a></li>
+        </ul>
     </aside>
     </nav>
