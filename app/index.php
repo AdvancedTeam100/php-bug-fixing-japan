@@ -31,35 +31,59 @@
     <main>
         <table class="contents">
             <td>
-                <a href="qr.php"><h2>会員証</h2></a>
+                <a href="qr.php">
+                    <img src="./img/qr.png">
+                    <h2>会員証</h2>
+                </a>
                 <p>ここにQRコードを表示</p>
             </td>
             <td>
-                <a href="point.php"><h2>ポイント管理</h2></a>
+                <a href="point.php">
+                    <img src="./img/p.png">
+                    <h2>ポイント管理</h2>
+                </a>
                 <p>FeeHatポイントを表示</p>
             </td>
             <td>
-                <a href="stamp_card.php"><h2>スタンプカード</h2></a>
+                <a href="stamp_card.php">
+                    <img src="./img/stamp_card.png">
+                    <h2>スタンプカード</h2>
+                </a>
                 <p>来店スタンプを集めてクーポンゲット♪</p>
             </td>
             <td>
-                <a href="coupon_history.php"><h2>クーポン履歴</h2></a>
+                <a href="coupon_history.php">
+                    <img src="./img/coupon_history.png">
+                    <h2>クーポン履歴</h2>
+                </a>
                 <p>クーポンの使用履歴を確認できます。</p>
             </td>
             <td>
-                <a href="game.php"><h2>ゲーム</h2></a>
+                <a href="game.php">
+                    <img src="./img/game.png">
+                    <h2>ゲーム</h2>
+                </a>
                 <p>オリジナルスマホゲーム</p>
             </td>
             <td>
-                <a href="https://feehatmember.bitter.jp/roulette/"><h2>ルーレット</h2></a>
+                <a href="https://feehatmember.bitter.jp/roulette/">
+                    <img src="./img/roulette.png">
+                    <h2>ルーレット</h2>
+                </a>
                 <p>カクテルメニューをランダムで選べる</p>
             </td>
             <td>
-                <a href="mypage.php"><h2>アカウント情報</h2></a>
+                <a href="mypage.php">
+                    <img src="./img/mypage.png">
+                    <h2>アカウント情報</h2>
+                </a>
                 <p>設定情報を確認できます。</p>
             </td>
             <td>
-                <a href="shop_info.php"><h2>店舗情報</h2></a>
+                <a href="shop_info.php">
+                    <img src="./img/shop_info.png">
+                    <h2>店舗情報</h2>
+                </a>
                 <p>お店の情報はこちら！</p>
             </td>
         </table>
