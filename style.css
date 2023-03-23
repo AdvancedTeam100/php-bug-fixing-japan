@@ -179,3 +179,7 @@ header {
 .tag-name:hover .tag-delete {
     display: block;
 }
+.questionnaire_tally td{
+  display: inline-block;
+  padding: 20px;
+}
