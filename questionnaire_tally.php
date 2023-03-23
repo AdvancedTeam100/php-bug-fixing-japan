@@ -71,8 +71,15 @@ if (!isset($q3_counts['あまりしない'])) {
   $q3_counts['あまりしない'] = 0;
 }
 
+// カンマ区切りの回答を分割してフラット化
+$q4_flat_answers = [];
+foreach ($answers_data as $answer) {
+    $q4_answers = explode(',', $answer['q4']);
+    $q4_flat_answers = array_merge($q4_flat_answers, $q4_answers);
+}
+
 // Q4の回答数を数える
-$q4_counts = array_count_values(array_column($answers_data, 'q4'));
+$q4_counts = array_count_values($q4_flat_answers);
 
 // 職場,先輩後輩,友達,家族,恋人,一人,その他が存在しない場合は、代替の値を設定する
 if (!isset($q4_counts['職場'])) {
