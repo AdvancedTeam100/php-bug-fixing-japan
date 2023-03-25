@@ -15,19 +15,6 @@
         <span class="dot"></span>
     </div>
 </div>
-
-
-    <div class="user_info">
-        <div class="user_rank_info">
-            <p class="user_name"><?=$user_data['name']?> 様</p>
-            <p class="user_rank"><?=$user_data['status']?></p>
-        </div>
-        <div class="rank_card">
-            <img src="img/bronze.png" alt="">
-        </div>
-    </div>
-      
-
     <main>
         <table class="contents">
             <td>
