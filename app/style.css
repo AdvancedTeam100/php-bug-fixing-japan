@@ -17,19 +17,13 @@ body {
   }
   /* ヘッダー */
   header {
-    background-color: #0b3600;
+    background: linear-gradient(to bottom right, #006034, #000e05);
     color: #fff;
     padding: 12px;
     text-align: center;
   }
-  header h1{
-    margin: 0px;
-    font-size: 22px;
-    background-color: #0b3600;
-    color: #fff;
-  }
-  header a{
-    color: white;
+  header img{
+    width: 75px
   }
   a{
     text-decoration: none;
@@ -42,7 +36,8 @@ body {
     justify-content: space-between;
     padding: 10px 40px;
     align-items: center;
-    background-color: #fff9e7;
+    background-color: #646464;
+    color: white;
   }
   .user_rank_info{
     text-align: center;
@@ -81,7 +76,7 @@ body {
     border-radius: 8px;
     margin: 5px;
     width: 45%;
-    box-shadow: 4px 4px 3px #dddddd;
+    box-shadow: 1px 1px 5px #dddddd
   }
   .contents h2{
     text-align: center;
@@ -90,13 +85,6 @@ body {
   }
   .contents p{
     font-size: 10px;
-  }
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 12px;
-    text-align: center;
-    margin-top: 32px;
   }
   
   /* スライドショー */
@@ -301,6 +289,52 @@ body {
   margin-right: 5px;
   vertical-align: top;
 }
+
+footer{
+  margin-top: 80px;
+}
+/* 固定されたメニューバーのスタイル */
+.bottom-menu {
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 390px;
+  z-index: 1000;
+}
+
+.bottom-menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+}
+
+.bottom-menu li {
+  text-align: center;
+}
+
+.bottom-menu a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.bottom-menu i {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.bottom-menu span {
+  display: block;
+}
+
+
+
 
 @media only screen and (min-width: 600px) {
   body {
