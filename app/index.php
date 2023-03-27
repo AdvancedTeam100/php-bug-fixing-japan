@@ -15,6 +15,21 @@
         <span class="dot"></span>
     </div>
 </div>
+
+<div class="container">
+  <div class="column">
+    <div class="image-container">
+      <img src="img/ruito.jpg" alt="Profile photo">
+    </div>
+    <div class="text-container">
+      <h2 class="title">今日はピスタチオのケーキを焼きました。</h2>
+      <p class="excerpt">バイトがマジで上手すぎるとバイト上がりに勝って帰りました。しかも2つも！ww。彼氏に・・・</p>
+      <a href="https://example.com/article">続きを読む</a>
+    </div>
+  </div>
+</div>
+
+
     <main>
         <table class="contents">
             <td>
