@@ -27,6 +27,9 @@
         <ul>
             <li><a href="coupon_list.php">クーポン一覧</a></li>
         </ul>
+        <ul>
+            <li><a href="coupon_history.php">クーポン使用履歴</a></li>
+        </ul>
         <h2><i class="fa fa-cog"></i>配信設定</h2>
         <ul>
             <li><a href="distribution_tags.php">タグ抽出</a></li>
