@@ -4,7 +4,12 @@ body {
     padding: 0;
     margin: 0;
   }
-  
+  h1{
+    text-align: center;
+  }
+  header p{
+    text-align: center;
+  }
   form {
     padding: 20px;
     border-radius: 10px;
@@ -33,44 +38,51 @@ body {
     background-color: #fff;
     box-sizing: border-box;
     font-size: 16px;
+  }
+  
+  input[type="radio"] {
+  display: none;
+  }
+  
+  .radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  }
+  
+  .radio-group label {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  }
+  
+  .radio-group label:hover {
+      border-color: #4CAF50;
+  }
+  
+  input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+  background-color: #3e8e41;
+  }  
+
+  @media only screen and (min-width: 600px) {
+    body {
+      max-width: 390px;
+      margin: 0px auto;
     }
-    
-    input[type="radio"] {
-    display: none;
-    }
-    
-    .radio-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    }
-    
-    .radio-group label {
-    margin-right: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #fff;
-    border: 2px solid #ccc;
-    cursor: pointer;
-    }
-    
-    .radio-group label:hover {
-        border-color: #4CAF50;
-    }
-    
-    input[type="submit"] {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    }
-    
-    input[type="submit"]:hover {
-    background-color: #3e8e41;
-    }  
+  }
