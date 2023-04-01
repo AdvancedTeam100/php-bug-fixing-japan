@@ -389,6 +389,27 @@ footer{
   display: block;
 }
 
+/* コラム */
+.column_detail {
+  background-color: white;
+  padding: 5px;
+}
+
+.column_detail h1{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.column_detail img{
+    width:100%;
+    margin-bottom: 1rem;
+}
+
+.column-body {
+  font-size: 1.2rem;
+}
 
 
 

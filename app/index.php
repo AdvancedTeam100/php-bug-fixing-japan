@@ -1,4 +1,24 @@
-<?php require('header.php');?>
+<?php require('header.php');
+
+// データベースから最新の投稿データを取得
+try{
+  $db = new PDO($dsn, $user, $pass, [
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+  ]);
+  $stmt = $db->prepare("SELECT * FROM columns ORDER BY created_at DESC LIMIT 1");
+  $stmt->execute();
+  $latest_column = $stmt->fetch(PDO::FETCH_ASSOC);
+}catch(PDOException $e){
+  echo '接続失敗' . $e->getMessage();
+  exit();
+}
+
+// 最新の投稿データを整形してHTMLに当てはめる
+$title = htmlspecialchars($latest_column['title'], ENT_QUOTES, 'UTF-8');
+$body = mb_substr(strip_tags($latest_column['body']), 0, 50, 'UTF-8') . '...';
+$link = 'column.php';
+?>
+
 <div class="slideshow-container">
     <div class="mySlides fade">
         <img src="img/feehat.jpg" alt="">
@@ -22,9 +42,9 @@
       <img src="img/ruito.jpg" alt="Profile photo">
     </div>
     <div class="text-container">
-      <h2 class="title">今日はピスタチオのケーキを焼きました。</h2>
-      <p class="excerpt">バイトがマジで上手すぎるとバイト上がりに勝って帰りました。しかも2つも！ww。彼氏に・・・</p>
-      <a href="https://example.com/article">続きを読む</a>
+        <h2 class="title"><?= $title ?></h2>
+        <p class="excerpt"><?= $body ?></p>
+        <a href="<?= $link ?>">続きを読む</a>
     </div>
   </div>
 </div>
