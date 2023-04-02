@@ -1,6 +1,17 @@
 <script>
-// メニュー項目の展開
 document.addEventListener('DOMContentLoaded', function() {
+  var hamburgerMenu = document.querySelector('.hamburger-menu');
+  var sideNav = document.querySelector('.side-nav');
+  var main = document.querySelector('main');
+
+  // スマホ画面の場合のみ、メニューを初期状態で閉じる
+  if (window.innerWidth <= 768) {
+    sideNav.classList.remove('open');
+    main.classList.remove('open');
+  }
+
+
+  // メニュー項目の展開
   document.querySelectorAll("aside h2").forEach(function(item) {
     var submenu = item.nextElementSibling;
     submenu.style.display = 'none'; // 初期状態は閉じる

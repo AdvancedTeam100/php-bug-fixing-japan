@@ -51,9 +51,10 @@ header {
   }
   .side-nav li {
     margin-bottom: 0.5rem;
-    padding: 0.5rem;
+    padding: 4px 20px;
     cursor: pointer;
-  }
+    font-size: 13px;
+}
   
   .side-nav li:hover {
     background-color: rgba(255, 255, 255, 0.1);
@@ -186,4 +187,37 @@ table.questionnaire_tally{
 .questionnaire_tally td{
   display: inline-block;
   padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .side-nav {
+    transform: translateX(-100%);
+    position: absolute;
+    z-index: 9999;
+    top: 4.5rem;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem;
+    transition: all 0.3s ease-out;
+  }
+  
+  .side-nav.open {
+    transform: translateX(0);
+  }
+  
+  .hamburger-menu {
+    display: block;
+  }
+  
+  .side-nav li {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .side-nav i {
+    margin-right: 0.5rem;
+  }
 }
