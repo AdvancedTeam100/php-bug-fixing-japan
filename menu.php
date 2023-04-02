@@ -1,3 +1,17 @@
+<script>
+// メニュー項目の展開
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll("aside h2").forEach(function(item) {
+    var submenu = item.nextElementSibling;
+    submenu.style.display = 'none'; // 初期状態は閉じる
+    item.addEventListener('click', function() {
+      submenu.style.display = submenu.style.display === 'none' ? '' : 'none';
+    });
+  });
+});
+
+</script>
+
 <nav class="side-nav">
     <aside>
         <h2><i class="fa fa-home"></i>ダッシュボード</h2>
@@ -27,8 +41,6 @@
         <h2><i class="fa fa-cog"></i>クーポン管理</h2>
         <ul>
             <li><a href="coupon_list.php"><i class="fas fa-ticket-alt"></i>クーポン一覧</a></li>
-        </ul>
-        <ul>
             <li><a href="coupon_history.php"><i class="fas fa-history"></i>クーポン使用履歴</a></li>
         </ul>
         <h2><i class="fas fa-pen"></i>コラム</h2>
