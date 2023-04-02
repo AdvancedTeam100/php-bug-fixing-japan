@@ -36,12 +36,4 @@ closeButton.addEventListener("click", () => {
 
 
 
-// メニュー項目の展開
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll("aside h2").forEach(function(item) {
-    item.addEventListener('click', function() {
-      this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? '' : 'none';
-    });
-  });
-});
 
