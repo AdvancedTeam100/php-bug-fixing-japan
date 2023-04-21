@@ -47,6 +47,7 @@ try {
 <?php require('menu.php');?>
 <main>
         <h1>タグ抽出</h1>
+        <h2>送信するタグを選んでください。</h2>
         <form method="post" action="">
             <div class="row">
                 <?php foreach($tag_array as $tag) : ?>
@@ -64,12 +65,17 @@ try {
                 </div>
             </div>
         </form>
+        <br>
         
         <div class="row mt-3">
             <?php if(!empty($checked_data)) : ?>
         <div class="col-md-12">
-            <p>選択された件数：<?=count($checked_data)?></p>
+            <p>選択された件数：<?=count($checked_data)?>件</p>
         </div>
+        <br>
+        <br>
+        <h2>メッセージを作成</h2>
+        <br>
         <div class="col-md-12">
             <form method="post" action="">
                 <div class="form-group">
