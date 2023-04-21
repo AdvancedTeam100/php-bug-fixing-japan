@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <aside>
         <h2><i class="fa fa-home"></i>ダッシュボード</h2>
         <ul>
-            <li><a href="question_item.php"><i class="fas fa-info-circle"></i>概要</a></li>
+            <li><a href="dashboard.php"><i class="fas fa-info-circle"></i>概要</a></li>
         </ul>
         <h2><i class="fa fa-user"></i>会員</h2>
         <ul>
