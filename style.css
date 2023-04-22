@@ -11,6 +11,7 @@ header {
     padding: 1rem;
     background-color: #333;
     color: #fff;
+    z-index: 99;
   }
   .logo {
     margin-right: 1rem;
@@ -75,11 +76,13 @@ header {
   main {
     padding: 2rem;
     transition: all 0.3s ease-out;
+    padding-top: 60px;
   }
-  
-  main.open {
-    transform: translateX(250px);
+
+  main.open{
+    margin-left: 250px;
   }
+
   aside h2{
     font-size: 16px;
     font-weight: normal;
@@ -221,3 +224,24 @@ table.questionnaire_tally{
     margin-right: 0.5rem;
   }
 }
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/* .sticky + .open {
+  padding-top: 60px;
+} */
+/* .content{
+  padding-top: 60px;
+} */

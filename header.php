@@ -17,7 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
   </head>
   <body>
-  <header>
+  <header id="navbar" class="sticky">
     <div>
         <button class="hamburger-menu">&#9776;</button>
         <img src="./img/logo.png" alt="Logo" class="logo">

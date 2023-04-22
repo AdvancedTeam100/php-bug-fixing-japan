@@ -1,3 +1,21 @@
+// // 
+// window.onscroll = function() {controlSticky()};
+
+// // 
+// var navbar = document.getElementById("navbar");
+
+// // 
+// var sticky = navbar.offsetTop;
+
+// // 
+// function controlSticky() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
+
 // サイドメニュー開閉
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const sideNav = document.querySelector(".side-nav");
@@ -31,6 +49,7 @@ closeButton.addEventListener("click", () => {
     main.classList.add("open");
   }
 });
+
 
 
 
