@@ -1,0 +1,264 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f1f1f1;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    z-index: 99;
+  }
+  .logo {
+    margin-right: 1rem;
+    height: 2rem;
+  }
+  img.logo{
+    width: 72px;
+    height: auto;
+  }
+  .hamburger-menu {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .notification {
+    margin-right: 1rem;
+  }
+  .side-nav {
+    position: fixed;
+    top: 4.5rem;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-out;
+  }    
+  .side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .side-nav li {
+    margin-bottom: 0.5rem;
+    padding: 4px 20px;
+    cursor: pointer;
+    font-size: 13px;
+}
+  
+  .side-nav li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  } 
+  .side-nav i {
+    margin-right: 0.5rem;
+  }
+  
+  .side-nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .side-nav.open {
+    transform: translateX(0);
+  }
+  
+  main {
+    padding: 2rem;
+    transition: all 0.3s ease-out;
+    padding-top: 60px;
+  }
+
+  main.open{
+    margin-left: 250px;
+  }
+
+  aside h2{
+    font-size: 16px;
+    font-weight: normal;
+    padding: 5px;
+    background-color: #3e3e3e;
+  }
+  h1{
+    font-size: 30px;
+    padding: 25px 0px;
+  }
+  table.t{
+    background: #ededed;
+    box-shadow: 2px 3px 10px #d9d9d9;
+    text-align: center;
+  }
+  table.t th {
+    background-color: #333;
+    color: white;
+    padding: 10px 25px;
+}
+  table.t td{
+    background-color: white;
+    padding: 5px 20px;
+    text-align: left;
+  }
+  .main_col{
+    display: flex;
+  }
+  .col_1{
+    width: 50%;
+  }
+  .col_2{
+    width: 30%;
+  }
+  .inner_col_1{
+    background-color: white;
+    padding: 30px;
+    margin: 0 30px;
+    box-shadow: 4px 4px 3px #c3c3c3;
+  }
+  .inner_col_1 table{
+    margin: 20px 0;
+  }
+  .inner_col_1 td{
+    padding: 0 20px;
+  }
+  .inner_col_2{
+    background-color: white;
+    padding: 50px;
+    margin: 0 30px;
+    box-shadow: 4px 4px 3px #c3c3c3;
+  }
+  .inner_col_2 button{
+    background-color: white;
+    border: none;
+    padding: 3px 0;
+  }
+  .status{
+    background-color: rgb(126, 124, 0);
+    color: white;
+    padding: 5px;
+  }
+  .tag td{
+    background-color: rgb(247 140 0);
+    padding: 3px 20px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 4px 4px 3px #c3c3c3;
+    display: inline-block;
+    margin: 3px;
+  }
+  .tag input{
+    width: 100px;
+    border: none;
+  }
+  td.td_reset{
+    background-color:none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none
+  }
+  .tag-delete {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    padding: 2px 5px;
+    background-color: #ff3b3b;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.tag-name {
+    position: relative;
+    cursor: pointer;
+}
+.tag-name:hover .tag-delete {
+    display: block;
+}
+
+table.questionnaire_tally{
+  width: 1000px;
+}
+.questionnaire_tally td{
+  display: inline-block;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .side-nav {
+    transform: translateX(-100%);
+    position: absolute;
+    z-index: 9999;
+    top: 4.5rem;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem;
+    transition: all 0.3s ease-out;
+  }
+  
+  .side-nav.open {
+    transform: translateX(0);
+  }
+
+  .main.open{
+    margin-top: 50px;
+  }
+  
+  .hamburger-menu {
+    display: inline;
+  }
+  
+  .side-nav li {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .side-nav i {
+    margin-right: 0.5rem;
+  }
+}
+
+/* @media only screen and (max-width: 400px) {
+  .side-nav {
+    width: ;
+  }
+} */
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+input[type=text], input[type=search], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.responsive-table{
+  overflow-x:auto;
+}
+
+
+

@@ -1,0 +1,421 @@
+/* 全体の設定 */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    background-color: #ffffff;
+    color: #686868;
+  }
+  h1{
+    text-align: center;
+    background-color: #8d8d8d;
+    color: white;
+  }
+  p{
+    text-align: center;
+  }
+  /* ヘッダー */
+  header {
+    background: linear-gradient(to bottom right, #006034, #000e05);
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+  }
+  header img{
+    width: 75px
+  }
+  a{
+    text-decoration: none;
+  }
+  .top_img img{
+    width: 100%;
+  }
+  .user_info{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    align-items: center;
+    background-color: #646464;
+    color: white;
+  }
+  .user_rank_info{
+    text-align: center;
+  }
+  .rank_card img{
+    width: 100px;
+  }
+
+  .user_name {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .user_rank {
+    font-size: 16px;
+    background-color: #8a9300;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px #494a00;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .column {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    width: 135px;
+    margin: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-container {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .title {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .excerpt {
+    margin: 10px 0;
+    font-size: 10px;
+  }
+  
+  .text-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #007bff;
+    border-bottom: 10px solid transparent;
+  }
+  
+  main {
+    padding: 16px;
+    background: #d7d7d7;
+  }
+  .contents{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .contents img{
+    width: 65px;
+  }
+  .contents td{
+    display: inline-block;
+    background-color: #fff;
+    border: solid 1px #d1d1d1;
+    border-radius: 8px;
+    margin: 5px;
+    width: 45%;
+    box-shadow: 1px 1px 5px #dddddd
+  }
+  .contents h2{
+    text-align: center;
+    font-size: 15px;
+    margin: 2px auto;
+  }
+  .contents p{
+    font-size: 10px;
+  }
+  
+  /* スライドショー */
+  .slideshow-container {
+    position: relative;
+    height: 270px;
+}
+
+.mySlides {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+.dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+.fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  /* QR */
+  #img-qr{
+    text-align: center;
+    padding: 10px;
+  }
+  /* スタンプカード */
+  .stamp{
+    background-color: #0077c7;
+    text-align: center;
+  }
+  .stamp table{
+    background-color: #fff4ca;
+    padding: 5px 2px;
+  }
+  .stamp td{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid 1px #d1d1d1;
+    display: inline-block;
+    margin: 5px;
+    background-color: white;
+    color: #cbcbcb;
+  }
+  .stamp img{
+    width: 45px;
+  }
+
+  /* ポイント管理 */
+  .point{
+    background-color: white;
+    padding: 10px;
+    box-shadow: 2px 4px 4px 3px #dddddd;
+  }
+  .point p{
+    margin: 0;
+    text-align: left;
+  }
+  .myPoint:before {
+    content: '';
+    display: inline-block;
+    width: 57px;
+    height: 65px;
+    background-image: url(./img/point.png);
+    background-size: cover;
+    vertical-align: middle;
+    margin: 0px 20px;
+  }
+  p.myPoint{
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+  .Mycoupon_card_back{
+    background-color: #6db1d9;
+    color: white;
+    padding: 1px;
+    box-shadow: 2px 4px 4px 3px #dddddd;
+  }
+  .Mycoupon_card{
+    background-color: #ffffff;
+    padding: 10px 25px;
+    box-shadow: 2px 4px 4px 3px #dddddd;
+    margin-bottom: 10px;
+  }
+  .Mycoupon_card button{
+    background-color: #ffec66;
+    border-radius: 10px;
+    color: #4c4c4c;
+    padding: 8px 20px;
+    border: solid 1px #ffd2d2;
+    width: 100%;
+    box-shadow: 4px 4px 3px #dddddd;
+    margin: 10px auto;
+  }
+  .Mycoupon_card button:hover{
+    background-color: #9c8700;
+    color: #ffffff;
+  }
+  .coupon_card{
+    background-color: #ffffff;
+    color: rgb(68, 68, 68);
+    padding: 10px 25px;
+    box-shadow: 2px 4px 4px 3px #dddddd;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .coupon_card p{
+    font-size: larger;
+    background-color: #e96100;
+    color: white;
+    padding: 5px;
+  }
+  .coupon_card button{
+    background-color: #ffec66;
+    border-radius: 10px;
+    color: #4c4c4c;
+    padding: 8px 20px;
+    border: solid 1px #ffd2d2;
+    width: 100%;
+    box-shadow: 4px 4px 3px #dddddd;
+    margin: 10px auto;
+  }
+  .coupon_card button:hover{
+    background-color: #9c8700;
+    color: #ffffff;
+  }
+
+
+  .canvas-container {
+    position: relative;
+    width:  calc(100% - 40px);
+    height: 300px;
+    overflow: hidden;
+    margin:20px;
+}
+
+/* mypage */
+.mypage_table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.mypage_table th,
+.mypage_table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.mypage_table th {
+  background-color: #eee;
+  text-align: left;
+}
+
+.mypage_table td:before {
+  content: attr(data-label);
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.mypage_table td {
+  text-align: center;
+}
+
+.mypage_table td[data-label]:before {
+  content: attr(data-label);
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 5px;
+  vertical-align: top;
+}
+
+footer{
+  margin-top: 80px;
+}
+/* 固定されたメニューバーのスタイル */
+.bottom-menu {
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 390px;
+  z-index: 1000;
+}
+
+.bottom-menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+}
+
+.bottom-menu li {
+  text-align: center;
+}
+
+.bottom-menu a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.bottom-menu i {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.bottom-menu span {
+  display: block;
+}
+
+/* コラム */
+.column_detail {
+  background-color: white;
+  padding: 5px;
+}
+
+.column_detail h1{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.column_detail img{
+    width:100%;
+    margin-bottom: 1rem;
+}
+
+.column-body {
+  font-size: 1.2rem;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  body {
+    max-width: 390px;
+    margin: 0px auto;
+  }
+}
